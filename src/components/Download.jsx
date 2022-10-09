@@ -4,7 +4,7 @@ import assets from '../assets';
 
 const Download = () => {
   return (
-    <div className={`${styles.section} ${styles.bgWhite}`}>
+    <div className={`${styles.section} ${styles.bgWhite}`} >
       <div className={`${styles.subSection} flex-col text-center`}>
         <div>
           <h1 className={`${styles.h1Text} ${styles.blackText}`}>
@@ -15,10 +15,10 @@ const Download = () => {
           </p>
         </div>
         <button className={styles.btnPrimary} 
-        link="https://github.com/devilica/reactnft"
+          onClick={()=>window.open("https://github.com/devilica/reactnft", "_blank")}
         >Source Code of app</button>
         <button className={styles.btnPrimary} 
-        link="https://github.com/devilica/showcasenft"
+         onClick={()=>window.open("https://github.com/devilica/showcasenft", "_blank")}
         >Source Code of website</button>
         <div className={styles.flexCenter}>
           <img src={assets.scene} alt="download" className={styles.fullImg} />
