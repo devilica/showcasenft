@@ -14,7 +14,12 @@ const Download = () => {
             Get the full source code on Github
           </p>
         </div>
-        <button className={styles.btnPrimary}>Source Code</button>
+        <button className={styles.btnPrimary} 
+        link="https://github.com/devilica/reactnft"
+        >Source Code of app</button>
+        <button className={styles.btnPrimary} 
+        link="https://github.com/devilica/showcasenft"
+        >Source Code of website</button>
         <div className={styles.flexCenter}>
           <img src={assets.scene} alt="download" className={styles.fullImg} />
         </div>
